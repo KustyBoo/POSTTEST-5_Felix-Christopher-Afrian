@@ -70,6 +70,7 @@ def hapus_menu() :
             print (*["|" + str(k) + " : " + str(v) for k,v in menu["minuman"].items()],sep= "\n")
             print ("=================================================================")
             print ("|Silahkan pilih dengan angka, menu apa yang ingin dihapus(conth : 1(untuk urutan pertama))|")
+            x1 = input("|Ketik pilihan anda disini = ")
             while x1 != "keluar" :
                 if x1 == 1 :
                     menu["minuman"].pop("teh es")
