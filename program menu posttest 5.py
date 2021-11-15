@@ -204,10 +204,8 @@ def ganti_menu() :
                 print ("|=======================================================|")  
                 x3 = input("|Silahkan ketik nama makanan yang akan menggantikan = ")
                 x4 = input("|Silahkan ketik harga makanan yang menggantikan = ") 
-                menu["makanan"].pop("nasi goreng")
-                temp_dict = {}
-                temp_dict.update({x3 : x4})
-                menu["makanan"] = {**temp_dict,**menu["makanan"]}
+                del menu["makanan"][next(islice(menu["makanan"],0,None))]
+                menu["makanan"] = insert(menu["makanan"],{x3 : x4}, 0)
                 print ("=================================================================")
                 print (*["|" + str(k) + " : " + str(v) for k,v in menu["makanan"].items()],sep= "\n")
                 print ("=================================================================")
