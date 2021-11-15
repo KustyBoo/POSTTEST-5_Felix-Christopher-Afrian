@@ -152,7 +152,7 @@ def tambah_menu() :
             x3 = int(input("|Silahkan ketik harga menu makanan tersebut disini = "))
             menu["makanan"][x2] = x3
             print ("=================================================================")
-            print (*"|" + [str(k) + " : " + str(v) for k,v in menu["makanan"].items()],sep= "\n")
+            print (*["|" + str(k) + " : " + str(v) for k,v in menu["makanan"].items()],sep= "\n")
             print ("=================================================================")
             print ("|Apakah anda ingin menambah menu makanan lain? |")
             x = input("|\"ya\" untuk lanjut atau \"keluar\" untuk keluar = ")
