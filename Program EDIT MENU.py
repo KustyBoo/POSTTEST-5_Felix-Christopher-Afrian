@@ -1,3 +1,5 @@
+# Program edit menu tanpa proses pesanan, dengan CRUD
+
 import sys
 from itertools import islice
 
