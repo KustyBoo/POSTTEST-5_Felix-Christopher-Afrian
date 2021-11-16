@@ -27,36 +27,33 @@ def hapus_menu() :
                     print (*["|" + str(k) + " : " + str(v) for k,v in menu["makanan"].items()],sep= "\n")
                     print ("=================================================================")
                     print ("|Apakah anda ingin menghapus menu makanan lain? |")
-                    x1 = input("|\"ya\" untuk lanjut atau \"keluar\" untuk keluar = ")
+                    x1 = input("|\"ya\" untuk lanjut atau \"keluar\" untuk kembali ke menu utama = ")
                     if x1 == "ya" :
                         hapus_menu()
                     elif x1 == "keluar" :
-                        print ("| Terima kasih, Selamat tinggal :) |")
-                        sys.exit()
+                        lihat_menu()
                 elif x1 == 2 :
                     menu["makanan"].pop("mie goreng")
                     print ("=================================================================")
                     print (*["|" + str(k) + " : " + str(v) for k,v in menu["makanan"].items()],sep= "\n")
                     print ("=================================================================")
                     print ("|Apakah anda ingin menghapus menu makanan lain? |")
-                    x1 = input("|\"ya\" untuk lanjut atau \"keluar\" untuk keluar = ")
+                    x1 = input("|\"ya\" untuk lanjut atau \"keluar\" untuk kembali ke menu utama = ")
                     if x1 == "ya" :
                         hapus_menu()
                     elif x1 == "keluar" :
-                        print ("| Terima kasih, Selamat tinggal :) |")
-                        sys.exit()
+                        lihat_menu()
                 elif x1 == 3 :
                     menu["makanan"].pop("nasi goreng")
                     print ("=================================================================")
                     print (*["|" + str(k) + " : " + str(v) for k,v in menu["makanan"].items()],sep= "\n")
                     print ("=================================================================")
                     print ("|Apakah anda ingin menghapus menu makanan lain? |")
-                    x1 = input("|\"ya\" untuk lanjut atau \"keluar\" untuk keluar = ")
+                    x1 = input("|\"ya\" untuk lanjut atau \"keluar\" untuk kembali ke menu utama = ")
                     if x1 == "ya" :
                         hapus_menu()
                     elif x1 == "keluar" :
-                        print ("| Terima kasih, Selamat tinggal :) |")
-                        sys.exit()
+                        lihat_menu()
                 elif x1 == "keluar" or x1 == 4 :
                     print ("| Terima kasih, Selamat tinggal :) |")
                     sys.exit()
@@ -70,7 +67,7 @@ def hapus_menu() :
             print (*["|" + str(k) + " : " + str(v) for k,v in menu["minuman"].items()],sep= "\n")
             print ("=================================================================")
             print ("|Silahkan pilih dengan angka, menu apa yang ingin dihapus(conth : 1(untuk urutan pertama))|")
-            x1 = input("|Ketik pilihan anda disini = ")
+            x1 = int(input("|Ketik pilihan anda disini = "))
             while x1 != "keluar" :
                 if x1 == 1 :
                     menu["minuman"].pop("teh es")
@@ -78,60 +75,55 @@ def hapus_menu() :
                     print (*["|" + str(k) + " : " + str(v) for k,v in menu["minuman"].items()],sep= "\n")
                     print ("=================================================================")
                     print ("|Apakah anda ingin menghapus menu minuman lain ? |")
-                    x1 = input("|\"ya\" untuk lanjut atau \"keluar\" untuk keluar = ")
+                    x1 = input("|\"ya\" untuk lanjut atau \"keluar\" untuk kembali ke menu utama = ")
                     if x1 == "ya" :
                         hapus_menu()
                     elif x1 == "keluar" :
-                        print ("| Terima kasih, Selamat tinggal :) |")
-                        sys.exit()
+                        lihat_menu()
                 elif x1 == 2 :
                     menu["minuman"].pop("teh hangat")
                     print ("=================================================================")
                     print (*["|" + str(k) + " : " + str(v) for k,v in menu["minuman"].items()],sep= "\n")
                     print ("=================================================================")
                     print ("|Apakah anda ingin menghapus menu minuman lain ? |")
-                    x1 = input("|\"ya\" untuk lanjut atau \"keluar\" untuk keluar = ")
+                    x1 = input("|\"ya\" untuk lanjut atau \"keluar\" untuk kembali ke menu utama = ")
                     if x1 == "ya" :
                         hapus_menu()
                     elif x1 == "keluar" :
-                        print ("| Terima kasih, Selamat tinggal :) |")
-                        sys.exit()
+                        lihat_menu()
                 elif x1 == 3 :
                     menu["minuman"].pop("jeruk es")
                     print ("=================================================================")
                     print (*["|" + str(k) + " : " + str(v) for k,v in menu["minuman"].items()],sep= "\n")
                     print ("=================================================================")
                     print ("|Apakah anda ingin menghapus menu minuman lain ? |")
-                    x1 = input("|\"ya\" untuk lanjut atau \"keluar\" untuk keluar = ")
+                    x1 = input("|\"ya\" untuk lanjut atau \"keluar\" untuk kembali ke menu utama = ")
                     if x1 == "ya" :
                         hapus_menu()
                     elif x1 == "keluar" :
-                        print ("| Terima kasih, Selamat tinggal :) |")
-                        sys.exit()
+                        lihat_menu()
                 elif x1 == 4 :
                     menu["minuman"].pop("jeruk hangat")
                     print ("=================================================================")
                     print (*["|" + str(k) + " : " + str(v) for k,v in menu["minuman"].items()],sep= "\n")
                     print ("=================================================================")
                     print ("|Apakah anda ingin menghapus menu minuman lain ? |")
-                    x1 = input("|\"ya\" untuk lanjut atau \"keluar\" untuk keluar = ")
+                    x1 = input("|\"ya\" untuk lanjut atau \"keluar\" untuk kembali ke menu utama = ")
                     if x1 == "ya" :
                         hapus_menu()
                     elif x1 == "keluar" :
-                        print ("| Terima kasih, Selamat tinggal :) |")
-                        sys.exit()
+                        lihat_menu
                 elif x1 == 5 :
                     menu["minuman"].pop("air mineral")
                     print ("=================================================================")
                     print (*["|" + str(k) + " : " + str(v) for k,v in menu["minuman"].items()],sep= "\n")
                     print ("=================================================================")
                     print ("|Apakah anda ingin menghapus menu minuman lain ? |")
-                    x1 = input("|\"ya\" untuk lanjut atau \"keluar\" untuk keluar = ")
+                    x1 = input("|\"ya\" untuk lanjut atau \"keluar\" untuk kembali ke menu utama = ")
                     if x1 == "ya" :
                         hapus_menu()
                     elif x1 == "keluar" :
-                        print ("| Terima kasih, Selamat tinggal :) |")
-                        sys.exit()
+                        lihat_menu()
                 elif x1 == 6 or x1 == "keluar" :
                     print ("| Terima kasih, Selamat tinggal :) |")
                     sys.exit()
@@ -156,12 +148,11 @@ def tambah_menu() :
             print (*["|" + str(k) + " : " + str(v) for k,v in menu["makanan"].items()],sep= "\n")
             print ("=================================================================")
             print ("|Apakah anda ingin menambah menu makanan lain? |")
-            x = input("|\"ya\" untuk lanjut atau \"keluar\" untuk keluar = ")
+            x = input("|\"ya\" untuk lanjut atau \"keluar\" untuk kembali ke menu utama = ")
             if x == "ya" :
                 tambah_menu()
             elif x == "keluar" :
-                print ("| Terima kasih, Selamat tinggal :) |")
-                sys.exit()
+                lihat_menu()
             else :
                 print ("error, perintah yang anda masukkan tidak terdaftar, dimohon ketik sesuai dengan perintah di atas !|")
                 x = input("|Silahkan ketik ulang disini = ")
@@ -174,12 +165,11 @@ def tambah_menu() :
             print (*["|" + str(k) + " : " + str(v) for k,v in menu["minuman"].items()],sep= "\n")
             print ("=================================================================")
             print ("|Apakah anda ingin menambah menu minuman lain? |")
-            x = input("|\"ya\" untuk lanjut atau \"keluar\" untuk keluar = ")
+            x = input("|\"ya\" untuk lanjut atau \"keluar\" untuk kembali ke menu utama = ")
             if x == "ya" :
                 tambah_menu()
             elif x == "keluar" :
-                print ("| Terima kasih, Selamat tinggal :) |")
-                sys.exit()
+                lihat_menu()
             else :
                 print ("error, perintah yang anda masukkan tidak terdaftar, dimohon ketik sesuai dengan perintah di atas !|")
                 x = input("|Silahkan ketik ulang disini = ")
@@ -210,12 +200,11 @@ def ganti_menu() :
                 print (*["|" + str(k) + " : " + str(v) for k,v in menu["makanan"].items()],sep= "\n")
                 print ("=================================================================")
                 print ("|Apakah anda ingin mengganti menu makanan lain?")
-                x = input("|\"ya\" untuk lanjut atau \"keluar\" untuk keluar = ")
+                x = input("|\"ya\" untuk lanjut atau \"keluar\" untuk kembali ke menu utama = ")
                 if x == "ya" :
                     ganti_menu()
                 elif x == "keluar" :
-                    print ("| Terima kasih, Selamat tinggal :) |")
-                    sys.exit()
+                    lihat_menu()
             elif x1 == 2 :
                 print ("|=======================================================|")  
                 x3 = input("|Silahkan ketik nama makanan yang akan menggantikan = ")
@@ -226,12 +215,11 @@ def ganti_menu() :
                 print (*["|" + str(k) + " : " + str(v) for k,v in menu["makanan"].items()],sep= "\n")
                 print ("=================================================================")
                 print ("|Apakah anda ingin mengganti menu makanan lain?")
-                x = input("|\"ya\" untuk lanjut atau \"keluar\" untuk keluar = ")
+                x = input("|\"ya\" untuk lanjut atau \"keluar\" untuk kembali ke menu utama = ")
                 if x == "ya" :
                     ganti_menu()
                 elif x == "keluar" :
-                    print ("| Terima kasih, Selamat tinggal :) |")
-                    sys.exit()
+                    lihat_menu()
             elif x1 == 3 :
                 print ("|=======================================================|")  
                 x3 = input("|Silahkan ketik nama makanan yang akan menggantikan = ")
@@ -242,12 +230,11 @@ def ganti_menu() :
                 print (*["|" + str(k) + " : " + str(v) for k,v in menu["makanan"].items()],sep= "\n")
                 print ("=================================================================")
                 print ("|Apakah anda ingin mengganti menu makanan lain?")
-                x = input("|\"ya\" untuk lanjut atau \"keluar\" untuk keluar = ")
+                x = input("|\"ya\" untuk lanjut atau \"keluar\" untuk kembali ke menu utama = ")
                 if x == "ya" :
                     ganti_menu()
                 elif x == "keluar" :
-                    print ("| Terima kasih, Selamat tinggal :) |")
-                    sys.exit()
+                    lihat_menu()
             elif x1 == 4 :
                 print ("| Terima kasih, Selamat tinggal :) |")
                 sys.exit()
@@ -275,12 +262,11 @@ def ganti_menu() :
                 print (*["|" + str(k) + " : " + str(v) for k,v in menu["minuman"].items()],sep= "\n")
                 print ("=================================================================")
                 print ("|Apakah anda ingin mengganti menu minuman lain?")
-                x = input("|\"ya\" untuk lanjut atau \"keluar\" untuk keluar = ")
+                x = input("|\"ya\" untuk lanjut atau \"keluar\" untuk kembali ke menu utama = ")
                 if x == "ya" :
                     ganti_menu()
                 elif x == "keluar" :
-                    print ("| Terima kasih, Selamat tinggal :) |")
-                    sys.exit()
+                    lihat_menu()
             elif x1 == 2 :
                 print ("|=======================================================|")  
                 x3 = input("|Silahkan ketik nama minuman yang akan menggantikan = ")
@@ -291,12 +277,11 @@ def ganti_menu() :
                 print (*["|" + str(k) + " : " + str(v) for k,v in menu["minuman"].items()],sep= "\n")
                 print ("=================================================================")
                 print ("|Apakah anda ingin mengganti menu minuman lain?")
-                x = input("|\"ya\" untuk lanjut atau \"keluar\" untuk keluar = ")
+                x = input("|\"ya\" untuk lanjut atau \"keluar\" untuk kembali ke menu utama = ")
                 if x == "ya" :
                     ganti_menu()
                 elif x == "keluar" :
-                    print ("| Terima kasih, Selamat tinggal :) |")
-                    sys.exit()
+                    lihat_menu()
             elif x1 == 3 :
                 print ("|=======================================================|")  
                 x3 = input("|Silahkan ketik nama minuman yang akan menggantikan = ")
@@ -307,12 +292,11 @@ def ganti_menu() :
                 print (*["|" + str(k) + " : " + str(v) for k,v in menu["minuman"].items()],sep= "\n")
                 print ("=================================================================")
                 print ("|Apakah anda ingin mengganti menu minuman lain?")
-                x = input("|\"ya\" untuk lanjut atau \"keluar\" untuk keluar = ")
+                x = input("|\"ya\" untuk lanjut atau \"keluar\" untuk kembali ke menu utama = ")
                 if x == "ya" :
                     ganti_menu()
                 elif x == "keluar" :
-                    print ("| Terima kasih, Selamat tinggal :) |")
-                    sys.exit()
+                    lihat_menu()
             elif x1 == 4 :
                 print ("|=======================================================|")  
                 x3 = input("|Silahkan ketik nama minuman yang akan menggantikan = ")
@@ -323,12 +307,11 @@ def ganti_menu() :
                 print (*["|" + str(k) + " : " + str(v) for k,v in menu["minuman"].items()],sep= "\n")
                 print ("=================================================================")
                 print ("|Apakah anda ingin mengganti menu minuman lain?")
-                x = input("|\"ya\" untuk lanjut atau \"keluar\" untuk keluar = ")
+                x = input("|\"ya\" untuk lanjut atau \"keluar\" untuk kembali ke menu utama = ")
                 if x == "ya" :
                     ganti_menu()
                 elif x == "keluar" :
-                    print ("| Terima kasih, Selamat tinggal :) |")
-                    sys.exit()
+                    lihat_menu()
             elif x1 == 5 :
                 print ("|=======================================================|")  
                 x3 = input("|Silahkan ketik nama minuman yang akan menggantikan = ")
@@ -339,12 +322,11 @@ def ganti_menu() :
                 print (*["|" + str(k) + " : " + str(v) for k,v in menu["minuman"].items()],sep= "\n")
                 print ("=================================================================")
                 print ("|Apakah anda ingin mengganti menu minuman lain?")
-                x = input("|\"ya\" untuk lanjut atau \"keluar\" untuk keluar = ")
+                x = input("|\"ya\" untuk lanjut atau \"keluar\" untuk kembali ke menu utama = ")
                 if x == "ya" :
                     ganti_menu()
                 elif x == "keluar" :
-                    print ("| Terima kasih, Selamat tinggal :) |")
-                    sys.exit()
+                    lihat_menu()
             elif x1 == 6 or x1 == "keluar" :
                 print ("| Terima kasih, Selamat tinggal :) |")
                 sys.exit()
@@ -356,21 +338,11 @@ def ganti_menu() :
         x = input("|Silahkan ketik disini = ")
 
 def lihat_menu() :
-    print ("|===============================================================|")
-    print ("|======Silahkan pilih menu yang telah tersedia di bawah ini=====|")
-    print ("|===============================================================|")
-    print ("|Menu Makanan :                 Harga :                         |")
-    print ("|1. nasi Goreng                 Rp18.000                        |")
-    print ("|2. mie Goreng                  Rp22.000                        |")
-    print ("|3. lontong Sayur               Rp17.000                        |")
-    print ("|===============================================================|")
-    print ("|===============================================================|")
-    print ("|Menu Minuman :                 Harga :                         |")
-    print ("|1. teh es/hangat               Rp 6.000                        |")
-    print ("|2. jeruk es/hangat             Rp 8.000                        |")
-    print ("|3. air mineral                 Rp 5.000                        |")
-    print ("|===============================================================|")
-    print ("|===============================================================|")
+    print ("|===============================================================================================================|")  
+    for x in menu :
+        print (*["|" + str(k) + " : " + str(v) for k,v in menu.items()],sep="\n")
+        break
+    print ("|===============================================================================================================|")
     print ("|Apa yang anda ingin lakukan = ?")
     print ("|a. \"tambah\" untuk menambahkan menu baru pada menu  |")
     print ("|b. \"hapus\" untuk menghapus menu makanan            |") 
@@ -386,6 +358,7 @@ def lihat_menu() :
             ganti_menu()
         elif x == "keluar" :
             print ("| Selamat tinggal, until we meet again :) |")
+            sys.exit()
         else :
             print ("error, perintah yang anda masukkan tidak terdaftar, dimohon ketik sesuai dengan perintah di atas !|")
             x = input("|Silahkan ketik ulang disini = ")
