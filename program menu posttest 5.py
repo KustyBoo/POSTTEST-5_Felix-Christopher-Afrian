@@ -55,8 +55,7 @@ def hapus_menu() :
                     elif x1 == "keluar" :
                         lihat_menu()
                 elif x1 == "keluar" or x1 == 4 :
-                    print ("| Terima kasih, Selamat tinggal :) |")
-                    sys.exit()
+                    lihat_menu()
                 else :
                     print ("error, perintah yang anda masukkan tidak terdaftar, dimohon ketik sesuai dengan perintah di atas !|")
                     x1 = input("|Silahkan ketik ulang disini = ")
@@ -125,8 +124,7 @@ def hapus_menu() :
                     elif x1 == "keluar" :
                         lihat_menu()
                 elif x1 == 6 or x1 == "keluar" :
-                    print ("| Terima kasih, Selamat tinggal :) |")
-                    sys.exit()
+                    lihat_menu()
                 else :
                     print ("error, perintah yang anda masukkan tidak terdaftar, dimohon ketik sesuai dengan perintah di atas !|")
                     x1 = input("|Silahkan ketik ulang disini = ")
