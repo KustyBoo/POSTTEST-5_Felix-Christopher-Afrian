@@ -111,7 +111,7 @@ def hapus_menu() :
                     if x1 == "ya" :
                         hapus_menu()
                     elif x1 == "keluar" :
-                        lihat_menu
+                        lihat_menu()
                 elif x1 == 5 :
                     menu["minuman"].pop("air mineral")
                     print ("=================================================================")
